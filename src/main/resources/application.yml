@@ -1,0 +1,23 @@
+# Server
+server:
+   http2:
+      enabled: true
+   port: 8024
+   servlet:
+      contextPath: /
+# Spring
+spring:
+   application:
+      name: Task Scheduler
+# Logger
+logging:
+   file: logs/task-scheduler.log
+   pattern:
+      console: "%d %-5level %logger : %msg%n"
+      file: "%d %-5level [%thread] %logger : %msg%n"
+   level:
+      org:
+         springframework:
+            security: DEBUG
+            web: DEBUG
+            #root: DEBUG
